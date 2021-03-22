@@ -1,20 +1,20 @@
 
-let inputLabel = document.getElementById(`inputLabel`);
+let inputVal = document.getElementById(`inputVal`);
 
 function btnClick(obj){
-    let clck = obj.innerHTML;
-
-    if(clck == "="){
-        inputLabel.innerHTML = eval(inputLabel.innerHTML);
+    let clickVal = obj.innerHTML;
+    if(clickVal == "="){
+        inputVal.innerHTML = eval(inputVal.innerHTML)
     }
-    else if(clck == 'AC'){
-        inputLabel.innerHTML = "0";
+    else if(clickVal == "AC"){
+        inputVal.innerHTML = "0"
     }
     else{
-        if(inputLabel.innerHTML == '0'){
-            inputLabel.innerHTML = clck
-        }else{
-            inputLabel.innerHTML = inputLabel.innerHTML + clck
+        if(inputVal.innerHTML=="0"){
+            inputVal.innerHTML = clickVal;
+        }
+        else{
+            inputVal.innerHTML += clickVal; 
         }
     }
 }
