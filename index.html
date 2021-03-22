@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+    <title>Calculator in javascript</title>
+
+</head>
+<body>
+        <div class="container" >
+            <table>
+                <tr>
+                    <td colspan="4" id="inputLabel" style="height: 80px;">0</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button onclick="btnClick(this)" style="width: 100%;">AC</button></td>
+                    <td><button onclick="btnClick(this)">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="btnClick(this)">7</button></td>
+                    <td><button onclick="btnClick(this)">8</button></td>
+                    <td><button onclick="btnClick(this)">9</button></td>
+                    <td><button onclick="btnClick(this)">*</button></td> 
+                </tr>
+                <tr>
+                    <td><button onclick="btnClick(this)">4</button></td>
+                    <td><button onclick="btnClick(this)">5</button></td>
+                    <td><button onclick="btnClick(this)">6</button></td>
+                    <td><button onclick="btnClick(this)">-</button></td> 
+                </tr>
+                <tr>
+                    <td><button onclick="btnClick(this)">1</button></td>
+                    <td><button onclick="btnClick(this)">2</button></td>
+                    <td><button onclick="btnClick(this)">3</button></td>
+                    <td><button onclick="btnClick(this)">+</button></td> 
+                </tr>
+                <tr>
+                    <td colspan="2" ><button onclick="btnClick(this)"style="width: 100%;">0</button></td>
+                    <td><button onclick="btnClick(this)">.</button></td>
+                    <td><button onclick="btnClick(this)">=</button></td>
+                </tr>
+            </table>
+        </div>
+</body>
+<script src="./main.js"></script>
+</html>
